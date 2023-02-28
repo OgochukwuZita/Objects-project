@@ -1,0 +1,20 @@
+
+//Question1
+
+function InstagramPost(HandleOfauthor, content, Link, numberOfviews, numberOflikes) {
+    this.HandleOfauthor = HandleOfauthor;
+    this.content = content;
+    this.Link = Link;
+    this.numberOfviews = numberOfviews;
+    this.numberOflikes = numberOflikes;
+    this.updatenumberOfviews = function(){
+        return ++this.numberOfviews;
+    };
+}
+//Question2
+
+let IgPost01 = new InstagramPost('Acha_zita', 'Day out in the sun', 'https://thumbs.dreamstime.com/b/girl-standing-bright-yellow-field-her-hands-reaching-out-to-sun-birds-girl-standing-bright-yellow-field-210295309.jpg', 108, 89);
+console.log(IgPost01);
+let IgPost02 = new InstagramPost('getsetstudios', 'She knows I love her', 'https://getsetstudios.simplybook.me/uploads/getsetstudios/image_files/preview/169332299031aa5b4f683deea750b257.jpeg', 808, 800);
+console.log(IgPost02);
+
