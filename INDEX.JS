@@ -18,3 +18,28 @@ console.log(IgPost01);
 let IgPost02 = new InstagramPost('getsetstudios', 'She knows I love her', 'https://getsetstudios.simplybook.me/uploads/getsetstudios/image_files/preview/169332299031aa5b4f683deea750b257.jpeg', 808, 800);
 console.log(IgPost02);
 
+//Question 3(a)
+
+function Person(name, age, location) {
+    return {
+        name: name,
+        age: age,
+        location: location,
+    }
+}
+const Person01 = Person('Musa Dawodu', '19', 'Lekki, Lagos State.');
+console.log(Person01);
+
+//Question 3(b)
+function JambScores(English, Government, Literature, CRK) {
+    return {
+        English: English,
+        Government: Government,
+        Literature: Literature,
+        CRK: CRK,
+    }
+}
+const scores = JambScores('70','85','82','94');
+console.log(scores);
+
+//Question 4
