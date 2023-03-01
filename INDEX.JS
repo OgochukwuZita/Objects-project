@@ -39,7 +39,7 @@ function JambScores(English, Government, Literature, CRK) {
         CRK: CRK,
     }
 }
-const scores = JambScores('70','85','82','94');
+const scores = JambScores(70,85,82,94);
 console.log(scores);
 
 //Question 4
