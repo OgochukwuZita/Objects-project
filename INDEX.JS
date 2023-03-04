@@ -43,3 +43,42 @@ const scores = JambScores(70,85,82,94);
 console.log(scores);
 
 //Question 4
+//1. Object.assign() method
+const School = {
+    Name: 'st.Marys secondary school',
+    numberOfstudents: 200,
+    staffNumber: 35,
+    proprietor: 'Mrs Jones',
+
+}
+console.log(School);
+const School02 = Object.assign({}, School)
+console.log(School02);
+School02.staffNumber = 48;
+console.log(School02);
+//2. Spread syntax (...) method
+
+function Country (Name, continent, population) {
+
+    return{
+        Name: Name,
+        continent: continent,
+        population: population,
+    }
+}
+const Country01 = Country('Jamaica', 'North America', '2.8 million');
+const Country02 = {...Country01};
+console.log(Country02);
+Country02.Name = 'Brazil';
+console.log(Country02);
+
+//JSON.parse method //JSON.parse(JSON.stringify())
+const Student = {
+    name: 'Ogo',
+    DOB: 'March 4th, 1990',
+    Age: 33,
+}
+const Student02 = JSON.parse(JSON.stringify(Student));
+Student02.Age = 54;
+ console.log({Student02});
+
