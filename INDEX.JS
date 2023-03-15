@@ -82,3 +82,17 @@ const Student02 = JSON.parse(JSON.stringify(Student));
 Student02.Age = 54;
  console.log({Student02});
 
+// Question 5
+const presidentialCandidates = {
+    AAC: 'Omoyele Sowore',
+    ACCORD: 'Christopher Imumolen',
+    APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar',
+ }
+for (let key in presidentialCandidates) {
+   console.log( presidentialCandidates[key],'is the presidential candidate for ' +key);
+}
+
+
